@@ -11,6 +11,13 @@
   <meta property="og:title" content="Hilary Nwankwo | Customer Support Engineer and Product Operations">
   <meta property="og:description" content="Takes shared, ambiguous work in payments support and product operations to a resolved state.">
   <meta property="og:url" content="https://heelaree.github.io/">
+  <meta property="og:image" content="https://heelaree.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hilary Nwankwo | Customer Support Engineer and Product Operations">
+  <meta name="twitter:description" content="Takes shared, ambiguous work in payments support and product operations to a resolved state.">
+  <meta name="twitter:image" content="https://heelaree.github.io/og-image.png">
   <link rel="canonical" href="https://heelaree.github.io/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e2bfa'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%23fdfae7'%3EHN%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +32,7 @@
     <a class="brand" href="#top" aria-label="Hilary Nwankwo, home"><span class="accent-dot"></span> Hilary Nwankwo</a>
     <nav aria-label="Primary">
       <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
@@ -50,7 +58,7 @@
           <a class="cta-btn" href="#contact">Get in touch</a>
           <a class="cta-ghost" href="#work">See selected work</a>
         </div>
-        <p class="meta">Port Harcourt, Nigeria &nbsp;&middot;&nbsp; Open to remote roles across EMEA and globally</p>
+        <p class="meta">Port Harcourt, Nigeria (WAT, UTC+1) &nbsp;&middot;&nbsp; Open to remote roles across EMEA and globally</p>
       </div>
     </section>
 
@@ -58,14 +66,9 @@
     <section class="metrics" aria-label="Highlights">
       <div class="wrap metrics-row">
         <div class="metric-card reveal">
-          <div class="metric-value">200+</div>
-          <div class="metric-label">Orders reconciled</div>
-          <p class="metric-desc">A payment-provider issue open for more than 200 days, closed out so failed orders stopped showing as in progress.</p>
-        </div>
-        <div class="metric-card reveal">
-          <div class="metric-value">4</div>
-          <div class="metric-label">Payment providers launched</div>
-          <p class="metric-desc">Regional integration testing across Africa, Europe and Asia informed each production rollout.</p>
+          <div class="metric-value">~50%</div>
+          <div class="metric-label">Fewer limit inquiries</div>
+          <p class="metric-desc">Estimated, week on week, after I pushed engineering to replace a vague purchase-limit error with clear in-app messaging.</p>
         </div>
         <div class="metric-card reveal">
           <div class="metric-value">&lt;10 min</div>
@@ -76,6 +79,11 @@
           <div class="metric-value">16</div>
           <div class="metric-label">Community managers led</div>
           <p class="metric-desc">Two teams of eight giving 24/7 coverage to 12+ blockchain communities across EMEA, AMER and APAC.</p>
+        </div>
+        <div class="metric-card reveal">
+          <div class="metric-value">4 yrs</div>
+          <div class="metric-label">Zero coverage gaps</div>
+          <p class="metric-desc">As team lead, kept support running around the clock through schedules, shift swaps and time off across three regions.</p>
         </div>
       </div>
     </section>
@@ -90,7 +98,7 @@
           <div class="split-left">
             <p>I have spent most of the last nine years running support and community operations for crypto products. Most recently I was a Customer Support Engineer at Exodus, where I became the team's go-to person for fiat-to-crypto transactions and the escalations that involve external payment providers.</p>
             <p>That seam, where a customer sees one thing, support sees another, and the provider's system says something else, is where I do my best work. Failures there are easy for each side to miss on its own.</p>
-            <p>Before that I led a 16-person remote community team at AmaZix, and before that I was a site civil engineer in Port Harcourt. I am currently completing an MBA at Lagos Business School.</p>
+            <p>Before that I led a 16-person remote community team at AmaZix, and before that I was a site civil engineer in Port Harcourt. Alongside completing an MBA at Lagos Business School, I have been designing the editorial operating system for Myhealthvoice and building open-source AI workflows on <a href="https://github.com/heelaree" rel="noopener" target="_blank">GitHub</a>.</p>
           </div>
           <div class="split-right">
             <ul class="insight-list">
@@ -108,55 +116,92 @@
       <div class="wrap">
         <div class="section-head"><h4>Selected work</h4><span class="tag-pill">Exodus, 2022 to 2026</span></div>
         <div class="accent-line"></div>
-        <h2>Problems I picked up and carried to the end.</h2>
-        <p class="lede">Figures marked "estimated" are my own estimates from the time, not numbers from a report.</p>
+        <h2>Six problems I worked through to a fix.</h2>
         <div class="cards">
           <article class="card reveal">
             <span class="card-num">01</span>
             <h3>The 200-day order problem</h3>
-            <p><strong>Problem.</strong> More than 200 orders had failed at a payment provider but still showed as "in progress" in the app, and the issue had been open for over 200 days.</p>
+            <p><strong>Problem.</strong> Orders that had failed at a payment provider still showed as "in progress" in the app, and the issue had been open for more than 200 days.</p>
             <p><strong>What I did.</strong> Investigated the status discrepancy and kept following up with the provider until it reconciled the orders.</p>
-            <p class="result"><strong>Result.</strong> 200+ orders displayed correctly. I also got a provider to expose the statuses needed for sell orders with revised price quotes, which engineering then showed in the app.</p>
+            <p class="result"><strong>Result.</strong> The provider reconciled the orders and they displayed correctly. I also got a provider to expose the statuses needed for sell orders with revised price quotes, which engineering then showed in the app.</p>
           </article>
           <article class="card reveal">
-            <span class="card-num">02</span>
-            <h3>Limiting the damage from provider outages</h3>
-            <p><strong>Problem.</strong> When a payment provider fails, customers keep trying and keep failing.</p>
-            <p><strong>What I did.</strong> Monitored orders and took failing fiat providers offline through remote configuration, typically within about 30 to 40 minutes when no quick fix was likely. On swap-monitoring duty I disabled failing swap providers immediately. I coordinated engineering, support and providers through recovery.</p>
-            <p class="result"><strong>Result.</strong> Less customer exposure to outages. Timings are recalled operational practice, not a formal SLA.</p>
+            <div class="card-head"><span class="card-num">02</span><span class="tag-pill">Built</span></div>
+            <h3>Claude-powered support workflows</h3>
+            <p><strong>What I built.</strong> Workflows that turn Slack case triage into task lists and search Slack, GitHub and Notion for context, so I could answer frontline questions without waiting on engineers. Plus a twice-weekly digest that translates pull requests across 4+ GitHub repositories into plain-language guidance on user impact.</p>
+            <p class="result"><strong>Result.</strong> An estimated 50% cut in my own investigation time on engineering-related questions. The digest fed most of the weekly fiat product-operations report to leadership, and I shared the tooling with colleagues.</p>
           </article>
           <article class="card reveal">
             <span class="card-num">03</span>
+            <h3>Auditing a support-dashboard migration</h3>
+            <p><strong>Problem.</strong> The team was moving to a new payment-support dashboard, and nobody had compared it with the old one.</p>
+            <p><strong>What I did.</strong> Audited the outgoing tool against its replacement, then wrote an internal reference guide to its fields and the steps for investigating failed orders and account issues.</p>
+            <p class="result"><strong>Result.</strong> 9 gaps, 12 new capabilities and 9 recommendations documented before the migration, including missing risk-score and identity-verification fields needed to diagnose blocked users.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">04</span>
+            <h3>Limiting the damage from provider outages</h3>
+            <p><strong>Problem.</strong> When a payment provider fails, customers keep trying and keep failing.</p>
+            <p><strong>What I did.</strong> Monitored orders and took failing fiat providers offline through remote configuration, typically within about 30 to 40 minutes when no quick fix was likely. On swap-monitoring duty I disabled failing swap providers immediately. I coordinated engineering, support and providers through recovery.</p>
+            <p class="result"><strong>Result.</strong> Protected customers from repeated failed attempts during outages by pulling broken providers offline fast and driving both short-term mitigation and root-cause fixes with engineering and external partners.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">05</span>
             <h3>Weekly end-to-end purchase testing</h3>
             <p><strong>Problem.</strong> Payment-flow bugs were reaching customers before anyone caught them.</p>
             <p><strong>What I did.</strong> Helped build and run a weekly test cycle: wrote the scripts, briefed about 5 testers, triaged an estimated 20 to 25 results per cycle and escalated bugs and usability issues to engineering and providers.</p>
             <p class="result"><strong>Result.</strong> A payment-method and provider mapping fix, a proposed correction for a separate wallet transaction discrepancy, and data-backed rollout advice for 4 new providers.</p>
           </article>
           <article class="card reveal">
-            <span class="card-num">04</span>
+            <span class="card-num">06</span>
             <h3>Fewer questions, because the answers existed</h3>
             <p><strong>Purchase limits.</strong> I collated recurring feedback, mapped the manual verification process and pushed engineering to replace a vague limit error with clear in-app messaging. Limit-related inquiries dropped by an estimated 50% week on week. I also proposed an automated process for granting higher limits.</p>
             <p class="result"><strong>Guides and procedures.</strong> Guides for compliance flags and order errors contributed to an estimated 80%+ drop in specialist pings from frontline support over a month.</p>
           </article>
+        </div>
+        <p class="section-note">Figures marked "estimated" are my own estimates, not figures from reports. Outage response timings reflect recalled operational practice, not a formal SLA.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head"><h4>Projects</h4><span class="tag-pill">Ongoing and open source</span></div>
+        <div class="accent-line"></div>
+        <h2>Systems and tools I am building.</h2>
+        <p class="lede">An ongoing editorial operations build alongside open-source AI skills and interactive web projects on <a href="https://github.com/heelaree" rel="noopener" target="_blank">github.com/heelaree</a>.</p>
+        <div class="cards projects-grid">
           <article class="card reveal">
-            <span class="card-num">05</span>
-            <h3>Claude-powered support workflows</h3>
-            <p><strong>What I built.</strong> Workflows that turn Slack case triage into task lists and search Slack, GitHub and Notion for context, so I could answer frontline questions without waiting on engineers. Plus a twice-weekly digest that translates pull requests across 4+ GitHub repositories into plain-language guidance on user impact.</p>
-            <p class="result"><strong>Result.</strong> An estimated 50% cut in my own investigation time on engineering-related questions. The digest fed most of the weekly fiat product-operations report to leadership, and I shared the tooling with colleagues.</p>
+            <div class="card-head"><span class="card-num">01</span><span class="tag-pill">Editorial operations</span></div>
+            <h3>Myhealthvoice editorial operating system</h3>
+            <p><strong>Problem.</strong> A Nigerian consumer health publication had its website and CMS built, but lacked a repeatable process to take human-written health articles from topic approval through editorial and clinical review to publication.</p>
+            <p><strong>What I built.</strong> Designed a multi-stage editorial pipeline with clinical risk tiers, writer clearance levels and evidence grades. Built the Notion article and contributor databases (with self-checking formulas, exception views and return-tracking automation), the SOP library, role-specific onboarding for writers, editors and clinicians, and a structured writer hiring and assessment pipeline.</p>
+            <p class="result"><strong>Result.</strong> The team runs commissioning, editorial review and medical review through the system, with day-to-day pipeline management handed over to an operations coordinator through a written routine.</p>
           </article>
           <article class="card reveal">
-            <span class="card-num">06</span>
-            <h3>Auditing a support-dashboard migration</h3>
-            <p><strong>Problem.</strong> The team was moving to a new payment-support dashboard, and nobody had compared it with the old one.</p>
-            <p><strong>What I did.</strong> Audited the outgoing tool against its replacement, then wrote an internal reference guide to its fields and the steps for investigating failed orders and account issues.</p>
-            <p class="result"><strong>Result.</strong> 9 gaps, 12 new capabilities and 9 recommendations documented before the migration, including missing risk-score and identity-verification fields needed to diagnose blocked users.</p>
+            <div class="card-head"><span class="card-num">02</span><span class="tag-pill">AI skill + Python</span></div>
+            <h3>Work Follow-Through (ai-worktasks-follow-through)</h3>
+            <p><strong>What I built.</strong> Portable AI agent skill (<code>SKILL.md</code>) and zero-dependency Python register engine that turns scattered Slack threads, tickets, emails and meeting notes into an evidence-backed follow-through queue. Separates acknowledgment from completion, carries unresolved items across weeks and reconciles status conflicts.</p>
+            <p class="result"><strong>Result.</strong> Paired with an interactive browser triage board and A/B evaluation studio. <a href="https://heelaree.github.io/ai-worktasks-follow-through/" rel="noopener" target="_blank">Live demo</a> &nbsp;&middot;&nbsp; <a href="https://github.com/heelaree/ai-worktasks-follow-through" rel="noopener" target="_blank">GitHub</a></p>
+          </article>
+          <article class="card reveal">
+            <div class="card-head"><span class="card-num">03</span><span class="tag-pill">AI skill + Python</span></div>
+            <h3>Small Business Financial Overview (ai-small-business-books)</h3>
+            <p><strong>What I built.</strong> Portable AI agent skill (<code>SKILL.md</code>) and deterministic Python reconciliation engine that converts multi-account bank statements into reconciled cash books, a summary P&amp;L, an interactive HTML dashboard with double-click transaction drill-downs, a 14-sheet Excel workbook and a strictly factual financial health report.</p>
+            <p class="result"><strong>Result.</strong> Combines LLM counterparty classification with Python scripts that verify every running balance to 0.01 and strip out internal transfers. <a href="https://heelaree.github.io/ai-small-business-books/" rel="noopener" target="_blank">Live demo</a> &nbsp;&middot;&nbsp; <a href="https://github.com/heelaree/ai-small-business-books" rel="noopener" target="_blank">GitHub</a></p>
+          </article>
+          <article class="card reveal">
+            <div class="card-head"><span class="card-num">04</span><span class="tag-pill">Interactive web</span></div>
+            <h3>TURN AM! (turn-am-play)</h3>
+            <p><strong>What I built.</strong> Mobile-first browser mini-game modelled on turning raw fermented Nigerian pap (Akamu / Ogi) into smooth porridge, built in HTML, CSS and JavaScript with starch gelatinization physics and two-thumb pour-and-stir controls.</p>
+            <p class="result"><strong>Result.</strong> Playable in desktop and mobile browsers. <a href="https://heelaree.github.io/turn-am-play/" rel="noopener" target="_blank">Play in browser</a> &nbsp;&middot;&nbsp; <a href="https://github.com/heelaree/turn-am-play" rel="noopener" target="_blank">GitHub</a></p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section" id="experience">
+    <section class="section section-divider" id="experience">
       <div class="wrap">
         <div class="section-head"><h4>Experience</h4><span class="tag-pill">Nine years, three roles</span></div>
         <div class="accent-line"></div>
@@ -172,19 +217,11 @@
               <p>Became the team's subject matter expert for fiat-to-crypto transactions within about a month of joining the fiat squad, resolving complex escalations involving external payment providers for users across EMEA.</p>
               <div class="detail-grid">
                 <div class="detail-block">
-                  <h3>Providers and incidents</h3>
+                  <h3>Product operations and providers</h3>
                   <ul>
-                    <li>Reconciled 200+ orders in a provider issue open for 200+ days</li>
-                    <li>Took failing providers offline fast and coordinated recovery</li>
-                    <li>Guided the production launch of 4 payment providers</li>
-                  </ul>
-                </div>
-                <div class="detail-block">
-                  <h3>Product operations</h3>
-                  <ul>
-                    <li>Turned raw customer feedback into scoped engineering issues</li>
                     <li>Ran a fortnightly sync across Product, Engineering and Support</li>
-                    <li>Built and ran weekly end-to-end purchase testing</li>
+                    <li>Turned raw customer feedback into scoped engineering issues</li>
+                    <li>Guided the production launch of 4 payment providers across Africa, Europe and Asia (see <a href="#work">Selected work</a> for project cases)</li>
                   </ul>
                 </div>
                 <div class="detail-block">
@@ -198,12 +235,17 @@
                 <div class="detail-block">
                   <h3>People and quality</h3>
                   <ul>
-                    <li>First response under 10 minutes, CSAT about 80%</li>
+                    <li>Held first response under 10 minutes with CSAT at about 80% (5 to 8 tickets an hour)</li>
                     <li>Coached two new colleagues to handle fiat work within two weeks</li>
                     <li>Wrote the guides the team used for compliance flags and order errors</li>
                   </ul>
                 </div>
               </div>
+              <blockquote class="endorsement">
+                <p>"Upon joining the Customer Support Product Operations specialization squad, he quickly grew into one of its strongest members, on a clear trajectory to become one of the top performers on the team. He worked several provider-status issues through to both short-term and long-term fixes, and moved quickly to protect customers when something broke, including making the call to pull a provider offline to limit impact."</p>
+                <footer>VP, Customer Support, Exodus Movement (written recommendation, July 2026)</footer>
+              </blockquote>
+              <p class="evidence"><strong>References.</strong> A recommendation from my manager (VP, Customer Support) and an employment verification letter are available on request. <a href="mailto:hilary.nwankwo@gmail.com?subject=Exodus%20recommendation%20and%20employment%20verification">Ask me for them</a>.</p>
             </div>
           </li>
 
@@ -255,17 +297,18 @@
         <div class="accent-line"></div>
         <h2>Areas I can take on.</h2>
         <div class="skills-grid">
-          <div class="detail-block reveal"><h3>Customer support</h3><ul><li>Multi-channel ticket resolution</li><li>SLA adherence and ticket quality</li><li>De-escalation and root cause analysis</li><li>Voice of the customer</li></ul></div>
-          <div class="detail-block reveal"><h3>Operations</h3><ul><li>Incident and escalation management</li><li>Vendor and third-party provider management</li><li>SOP and runbook authoring</li><li>Cross-functional work with product and engineering</li></ul></div>
-          <div class="detail-block reveal"><h3>Product operations</h3><ul><li>Feedback synthesis and bug triage</li><li>Release and pull request tracking</li><li>Feature gap analysis</li><li>Usage analysis in Mixpanel</li></ul></div>
-          <div class="detail-block reveal"><h3>Risk and compliance</h3><ul><li>Fraud and scam intervention</li><li>KYC, AML and OFAC sanctions screening</li><li>Transaction monitoring and blockchain tracing</li><li>Chargeback defence</li></ul></div>
-          <div class="detail-block reveal"><h3>Payments</h3><ul><li>Fiat on-ramp and off-ramp operations</li><li>Payment and transaction investigation</li><li>Card processing and bank transfers</li><li>Crypto-fiat exchange operations</li></ul></div>
-          <div class="detail-block reveal"><h3>People and clients</h3><ul><li>Agent onboarding and coaching</li><li>Leading remote teams</li><li>Sales-to-service client handoffs</li><li>Knowledge base and documentation</li></ul></div>
+          <div class="detail-block reveal"><h3>Customer support</h3><ul><li>Multi-channel ticket resolution</li><li>SLA adherence and de-escalation</li><li>Root cause analysis and voice of the customer</li></ul></div>
+          <div class="detail-block reveal"><h3>Operations</h3><ul><li>Incident and escalation management</li><li>Third-party provider coordination</li><li>SOP and runbook authoring</li></ul></div>
+          <div class="detail-block reveal"><h3>Product operations</h3><ul><li>Bug triage and scoped engineering issues</li><li>Release and pull request tracking</li><li>Feature gap and Mixpanel usage analysis</li></ul></div>
+          <div class="detail-block reveal"><h3>Risk and compliance</h3><ul><li>Fraud and scam intervention</li><li>KYC, AML and OFAC sanctions screening</li><li>Blockchain tracing and chargeback defence</li></ul></div>
+          <div class="detail-block reveal"><h3>Payments</h3><ul><li>Fiat on-ramp and off-ramp operations</li><li>Card processing and bank transfers</li><li>Failed transaction investigation</li></ul></div>
+          <div class="detail-block reveal"><h3>People and clients</h3><ul><li>Agent onboarding and coaching</li><li>Leading remote teams across regions</li><li>Sales-to-service client handoffs</li></ul></div>
         </div>
         <h4 class="tools-title">Tools and platforms</h4>
         <ul class="chips" aria-label="Tools and platforms">
           <li>Zendesk</li><li>Intercom</li><li>ZOHO SalesIQ</li><li>Slack</li><li>Notion</li><li>Asana</li><li>GitHub</li><li>Mixpanel</li><li>GraphQL</li><li>Etherscan</li><li>Tronscan</li><li>Claude (AI-assisted support and ops workflows)</li>
         </ul>
+        <p class="languages-line"><strong>Languages.</strong> English, native in writing and speech.</p>
       </div>
     </section>
 
@@ -275,20 +318,16 @@
         <div class="section-head"><h4>Education</h4><span class="tag-pill">Study</span></div>
         <div class="accent-line"></div>
         <h2>Business on top of an engineering base.</h2>
-        <div class="edu-row">
-          <div class="metric-card reveal">
-            <div class="metric-label">Master of Business Administration</div>
-            <p class="metric-desc">Lagos Business School<br>Expected 2027</p>
-          </div>
-          <div class="metric-card reveal">
-            <div class="metric-label">B.Eng, Structural Engineering</div>
-            <p class="metric-desc">Federal University of Technology, Owerri<br>2013</p>
-          </div>
-          <div class="metric-card reveal">
-            <div class="metric-label">Languages</div>
-            <p class="metric-desc">English, native in writing and speech</p>
-          </div>
-        </div>
+        <ul class="edu-list">
+          <li class="edu-item reveal">
+            <h3>Master of Business Administration</h3>
+            <p class="edu-meta">Lagos Business School &middot; Expected 2027</p>
+          </li>
+          <li class="edu-item reveal">
+            <h3>B.Eng, Structural Engineering</h3>
+            <p class="edu-meta">Federal University of Technology, Owerri &middot; 2013</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -298,18 +337,19 @@
       <div class="closing-decoration-2" aria-hidden="true"></div>
       <div class="wrap closing-inner">
         <div class="accent-line"></div>
-        <h2 class="closing-title">Let's talk.</h2>
+        <h2 class="closing-title">Get in touch.</h2>
         <p class="closing-sub">I am looking for roles in customer support engineering, support operations, product operations, payments and risk. Remote across EMEA and globally, or based in Nigeria.</p>
         <div class="cta-row">
           <a class="cta-btn" href="mailto:hilary.nwankwo@gmail.com">hilary.nwankwo@gmail.com</a>
           <a class="cta-ghost" href="https://www.linkedin.com/in/hilary-nwankwo" rel="noopener" target="_blank">LinkedIn</a>
+          <a class="cta-ghost" href="https://github.com/heelaree" rel="noopener" target="_blank">GitHub</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap"><span>&copy; <span id="year">2026</span> Hilary Nwankwo</span><span>Port Harcourt, Nigeria</span></div>
+    <div class="wrap"><span>&copy; <span id="year">2026</span> Hilary Nwankwo</span><span>Port Harcourt, Nigeria (WAT, UTC+1)</span></div>
   </footer>
 
   <script src="script.js"></script>
